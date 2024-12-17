@@ -1,0 +1,113 @@
+.root {
+    -fx-background-color: #333333;
+    -fx-font-family: "Monospace";
+    -fx-spacing: 1px;
+}
+
+#screenText {
+    -fx-text-fill: lightgray;
+    -fx-alignment: center-right;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+#equalButon {
+    -fx-background-color: orangered;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-border-radius: 0px;
+    -fx-background-insets: 0px;
+    -fx-margin: 5px;
+}
+
+#ceroButon, #comaButon, #fiveButon, #fourButon, #nineButon, #ochoButon,
+#oneButton, #sevenButon, #sixButon, #tresButon, #twoButton {
+    -fx-text-fill: white;
+    -fx-background-color: #555555;
+    -fx-font-size: 16px;
+    -fx-border-radius: 0px;
+    -fx-background-insets: 0px;
+    -fx-margin: 5px;
+}
+
+#cButon, #ceButon {
+    -fx-text-fill: black;
+    -fx-background-color: #d3d3d3;
+    -fx-font-size: 16px;
+    -fx-border-radius: 0px;
+    -fx-background-insets: 0px;
+    -fx-margin: 5px;
+}
+
+#divButon, #lessButon, #multiButon, #plusButon {
+    -fx-background-color: orange;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-border-radius: 0px;
+    -fx-background-insets: 0px;
+    -fx-margin: 5px;
+}
+
+#divButon:hover, #lessButon:hover, #multiButon:hover, #plusButon:hover {
+    -fx-background-color: darkorange;
+}
+
+#equalButon:hover {
+    -fx-background-color: darkred;
+}
+
+#equalButon:pressed {
+    -fx-background-color: darkgreen;
+}
+
+#cButon:hover, #ceButon:hover {
+    -fx-background-color: white;
+}
+
+#cButon:pressed, #ceButon:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: lightgray;
+}
+
+#ceroButon:hover, #comaButon:hover, #fiveButon:hover, #fourButon:hover,
+#nineButon:hover, #ochoButon:hover, #oneButton:hover, #sevenButon:hover,
+#sixButon:hover, #tresButon:hover, #twoButton:hover {
+    -fx-text-fill: #333333;
+    -fx-background-color: lightgray;
+}
+
+#ceroButon:pressed, #comaButon:pressed, #fiveButon:pressed, #fourButon:pressed,
+#nineButon:pressed, #ochoButon:pressed, #oneButton:pressed, #sevenButon:pressed,
+#sixButon:pressed, #tresButon:pressed, #twoButton:pressed {
+    -fx-text-fill: lightgray;
+    -fx-background-color: black;
+}
+
+#plusButon, #multiButon, #divButon, #lessButon {
+    -fx-text-fill: white;
+    -fx-background-color: orange;
+    -fx-font-size: 16px;
+    -fx-border-radius: 0px;
+    -fx-background-insets: 0px;
+    -fx-margin: 5px;
+}
+
+#plusButon:hover, #multiButon:hover, #divButon:hover, #lessButon:hover {
+    -fx-background-color: darkorange;
+}
+
+#plusButon:pressed, #multiButon:pressed, #divButon:pressed, #lessButon:pressed {
+    -fx-text-fill: orange;
+    -fx-background-color: white;
+}
+
+#plusButon:default, #multiButon:default, #divButon:default, #lessButon:default {
+    -fx-background-color: red;
+}
+
+#equalButon:default {
+    -fx-background-color: orangered;
+}
