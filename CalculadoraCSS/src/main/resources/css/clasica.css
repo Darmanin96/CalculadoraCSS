@@ -1,5 +1,5 @@
 .root {
-    -fx-background-color: #333333;
+    -fx-background-color: black;
     -fx-font-family: "Monospace";
     -fx-spacing: 1px;
 }
@@ -21,6 +21,9 @@
     -fx-border-radius: 0px;
     -fx-background-insets: 0px;
     -fx-margin: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
 }
 
 #ceroButon, #comaButon, #fiveButon, #fourButon, #nineButon, #ochoButon,
@@ -31,6 +34,10 @@
     -fx-border-radius: 0px;
     -fx-background-insets: 0px;
     -fx-margin: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+
 }
 
 #cButon, #ceButon {
@@ -40,6 +47,9 @@
     -fx-border-radius: 0px;
     -fx-background-insets: 0px;
     -fx-margin: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
 }
 
 #divButon, #lessButon, #multiButon, #plusButon {
@@ -49,14 +59,21 @@
     -fx-border-radius: 0px;
     -fx-background-insets: 0px;
     -fx-margin: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
 }
 
 #divButon:hover, #lessButon:hover, #multiButon:hover, #plusButon:hover {
     -fx-background-color: darkorange;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
 }
 
 #equalButon:hover {
     -fx-background-color: darkred;
+
 }
 
 #equalButon:pressed {
@@ -93,10 +110,16 @@
     -fx-border-radius: 0px;
     -fx-background-insets: 0px;
     -fx-margin: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
 }
 
 #plusButon:hover, #multiButon:hover, #divButon:hover, #lessButon:hover {
     -fx-background-color: darkorange;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
 }
 
 #plusButon:pressed, #multiButon:pressed, #divButon:pressed, #lessButon:pressed {

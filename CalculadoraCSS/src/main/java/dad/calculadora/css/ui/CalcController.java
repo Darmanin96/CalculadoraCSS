@@ -1,6 +1,7 @@
 package dad.calculadora.css.ui;
 
 import java.io.IOException;
+import java.util.*;
 
 import dad.calculadora.css.Calculadora;
 import javafx.beans.binding.Bindings;
@@ -9,6 +10,7 @@ import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.ContextMenu;
 import javafx.scene.control.RadioMenuItem;
@@ -43,6 +45,8 @@ public class CalcController {
 		screenText.textProperty().bind(calculadora.screenProperty());
 		
 	}
+
+
 	
 	@FXML
 	private void onOperationButtonHandle(ActionEvent e) {
@@ -68,7 +72,24 @@ public class CalcController {
 		String texto = ((Button)e.getSource()).getText();
 		calculadora.insert(texto.charAt(0));
 	}
-	
+
+
+	@FXML
+	void onModernaAction(ActionEvent event) {
+		Scene scene = view.getScene();
+		scene.getStylesheets().clear();
+		scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/moderna.css")).toExternalForm());
+	}
+
+
+	@FXML
+	void onClasicaAction(ActionEvent event) {
+		Scene scene = view.getScene();
+		scene.getStylesheets().clear();
+		scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/clasica.css")).toExternalForm());
+	}
+
+
 	public GridPane getView() {
 		return view;
 	}

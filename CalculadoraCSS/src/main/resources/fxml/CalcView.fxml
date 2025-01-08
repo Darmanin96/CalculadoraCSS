@@ -4,6 +4,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
 <GridPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
@@ -12,7 +13,7 @@
 		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
 		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
 		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-		<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+		<ColumnConstraints hgrow="SOMETIMES" prefWidth="117.0" />
 	</columnConstraints>
 	<rowConstraints>
 		<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
@@ -20,6 +21,7 @@
 		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
 		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
 		<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
 	</rowConstraints>
 	<children>
 		<TextField fx:id="screenText" editable="false" focusTraversable="false" GridPane.columnSpan="5" />
@@ -41,5 +43,11 @@
 		<Button fx:id="ceroButon" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumberButtonHandle" text="0" GridPane.columnSpan="2" GridPane.rowIndex="4" />
 		<Button fx:id="comaButon" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCommaButtonHandle" text="," GridPane.columnIndex="2" GridPane.rowIndex="4" />
 		<Button fx:id="plusButon" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onOperationButtonHandle" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="Clasica" mnemonicParsing="false" onAction="#onClasicaAction" text="Clásica" />
+            <Button fx:id="Moderna" mnemonicParsing="false" onAction="#onModernaAction" text="Moderna" />
+         </children>
+      </HBox>
 	</children>
 </GridPane>

@@ -14,9 +14,11 @@ public class CalcApp extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		controller = new CalcController();
-		Scene scene = new Scene(controller.getView(), 300, 300);
+		Scene scene = new Scene(controller.getView(), 600, 450);
+		scene.getStylesheets().clear();
 		scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/moderna.css")).toExternalForm());
 		primaryStage.setTitle("Calculadora");
+		scene.getStylesheets().clear();
 		primaryStage.getIcons().add(new Image("/images/calculator-32x32.png"));
 		primaryStage.setScene(scene);
 		primaryStage.show();
